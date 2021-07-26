@@ -208,11 +208,16 @@ include_directories(
 
 add_executable(basic_simple_talker1 src/basic_simple_talker.cpp)
 add_executable(basic_simple_listener1 src/basic_simple_listener.cpp)
+add_executable(basic_param_talker src/basic_param_talker.cpp)
 
 target_link_libraries(basic_simple_talker1
   ${catkin_LIBRARIES}
   )
 
 target_link_libraries(basic_simple_listener1
+  ${catkin_LIBRARIES}
+  )
+
+target_link_libraries(basic_param_talker
   ${catkin_LIBRARIES}
   )
